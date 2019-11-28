@@ -1,0 +1,20 @@
+.footer{
+  background-color: #acd8ad;
+  margin-top: 4.8rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.1rem;
+
+  &__text{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  &__text:first-child{
+    padding-bottom: 0.5rem;
+  }
+  &__logo{
+    margin-left: 35px;
+    display: none;
+  }
+}

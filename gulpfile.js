@@ -41,6 +41,7 @@ const buildSCSS = () => (
 
 const buildJS = () => (
     gulp.src(path.src.js)
+
         .pipe(concat("script.js"))
         .pipe(gulp.dest(path.dist.js))
 );

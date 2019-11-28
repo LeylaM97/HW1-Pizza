@@ -1,7 +1,14 @@
-@import "reset";
+@import "001reset";
 /** if you have separate file for variables and mixins, or fonts - import it here **/
-@import "header";
-@import "content";
+html{
+  font-size: 10px;
+}
+
+@import "002header";
+@import "003menu";
+@import "004content";
+@import "005footer";
+
 
 /** MEDIA **/
 @import "media/all-media";

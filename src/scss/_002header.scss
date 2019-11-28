@@ -1,0 +1,106 @@
+.top-menu{
+  height: 3.7rem;
+  background-color: #373c3f;
+  display: flex;
+  justify-content: space-between;
+
+&__text{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.8rem;
+}
+&__burger{
+  width: 4.1rem;
+  height: 3.7rem;
+  background-color: #202529;
+}
+  &__burger-line{
+    width: 1.6rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: 0.2rem 0.2rem 0.2rem 1.3rem;
+  }
+  &__burger-line:first-child{
+    margin-top: 1.3rem;
+  }
+  &__burger:hover &__burger-line2{
+    display: none;
+  }
+  &__burger:hover &__burger-line1{
+    transform: rotate(-45deg) translate(-0.3rem, 0.2rem);
+  }
+  &__burger:hover &__burger-line3{
+    transform: rotate(45deg) translate(-0.1rem, 0);
+  }
+  &__drop-down{
+    display: none;
+    position: absolute;
+    top:3.7rem;
+    right: 0;
+    background-color: #fafafa;
+    color: #444444;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+  }
+ &__drop-down-li{
+   padding: 1.4rem 9.6rem 0.7rem 1.2rem;
+   border-bottom: 0.1rem solid #e1e1e1;
+ }
+  &__burger:hover &__drop-down{
+    display: block;
+    z-index: 1;
+  }
+  &__drop-down-li:hover{
+    background-color: #f5f5f5;
+  }
+}
+/******************************************************/
+.top-menu-980{
+  display: none;
+  background-color: #373c3f;
+  align-items: center;
+  justify-content: space-between;
+  &__menu-item{
+    font-size: 0.5rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding-left: 1rem;
+    display:inline-block;
+    text-decoration: none;
+  }
+  &__img{
+    padding-right: 1rem;
+  }
+}
+/*******************************************************************/
+.header{
+  font-family: 'Lato',sans-serif;
+  font-weight: 700;
+  height: 17.3rem;
+  background-image: url("../img/header-fon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom:0.2rem;
+
+  &__slogan{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 0.05rem;
+  }
+  &__slogan:first-child{
+    padding-top: 1.7rem;
+    padding-bottom: 0.8rem;
+  }
+  &__site{
+    color: #a6d6e0;
+    padding-top: 1.1rem;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+  }
+}

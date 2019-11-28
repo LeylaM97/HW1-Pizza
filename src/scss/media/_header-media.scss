@@ -1,0 +1,61 @@
+@media screen and (min-width:480px) and (max-width: 640px){
+  html{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 480px){
+  .shown{
+    display: none;
+  }
+  .hidden{
+    display: block;
+  }
+}
+
+@media screen and (min-width:640px) and (max-width: 980px){
+  html{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 980px){
+  html{
+    font-size: 30px;
+  }
+  .header{
+    background-image: url("../../img/header-fon1200.png");
+  }
+  .top-menu{
+    display: none;
+  }
+  .top-menu-980{
+    display: flex;
+  }
+  .menu{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    &__item{
+      display: block;
+      font-size: 43px;
+    }
+  &__item-green-square{
+    display: none;
+  }
+    &__item-image1{
+      background-image: url("../../img/Pizza delivery980.png");
+      background-position: 0 0;
+      padding: 6rem 2rem 6.2rem 2.2rem;
+    }
+    &__item-image2{
+      background-image: url("../../img/UA_UX Salads980.png");
+      background-position: 0 0;
+      padding: 6.1rem 2.2rem 6.1rem 2.3rem;
+    }
+    &__item-image3{
+      background-image: url("../../img/Desserts980.png");
+      background-position: 0 0;
+      padding: 6.13rem 3.9rem 6.08rem 3.86rem;
+    }
+}
+}
